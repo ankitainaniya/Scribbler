@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Scribbler</title>
+   
+       
+        <link href="css\common.css" rel="stylesheet" type="text/css">
+	<link href="css\header.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    
+</head>   
+<body>
+
+     <div class="header">
+      <button id ="top_button_1" >Sign Up</button>
+      <button id ="top_button_2" >Sign In</button>
+      <a id="logo_text" class="logo">ScriBBler</a>
+      <p class="sub_text">Explore Imagine Create</p>
+  </div> 
+
+
+<div id = "mid_button_area">
+      <p align = "center">
+          <a href = "html/postslist.html">
+            <button class= "middle_button" id="all_post_button">
+              All Posts 
+            </button>
+          </a>
+          <button class = "middle_button" id = "create_Post_button">
+            Create Post 
+          </button>
+      </p>
+  </div>
+
+` <div id="signup_modal" class="modal">                  
+  <div class="modal-content">
+    <span class="close">
+      &times;
+    </span>
+    <p>
+      <h2>Get Started</h2>
+      <hr class = "hr-Shade">
+      <form class = "form-style">
+      <label>Full Name</label><br>
+      <input type="text" placeholder="Enter Full Name" required> <br>           
+      <label>Username</label><br>
+      <input type="text" placeholder="Enter Username" required><br>                
+      <label>Password </label><br>
+      <input type="password" placeholder="Enter Password" required><br>                  
+      <label>Confirm Password</label><br>
+      <input type="password" placeholder="Confirm Password" required><br>                 
+      <button class = "Sign_Up_Button">Sign Up</button>
+      </form>       
+    </p>
+  </div>
+ </div>
+
+
+</div>
+
+<div id="signin_modal" class="modal">                  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>
+      <h2>Welcome Back !</h2>
+      <hr class = "hr-Shade">
+      <form class = "form-style">   
+        <label>Username</label> <br>
+        <input type="text" placeholder="Enter Username" required>
+        <label>Password</label> <br>
+        <input type="password" placeholder="Enter Password" required> <br>
+        <button class = "Sign-Up-Button">
+          Sign In
+        </button><br>
+        Not a member ? <a id = "linking" onclick='href_click()'><u style="color:blue">Sign Up</u></a>
+      </form>       
+    </p>
+  </div>
+</div>
+
+<div id="create_post_model" class="modal">                  
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>
+	<form class = "form-style"> 
+        <h2>Create Your Post</h2>
+        <hr class = "hr-shade">
+        <h4>Pen Your Post</h4>
+        <input type="text" placeholder="Enter title of your post">
+        <h4>Content</h4>
+        <textarea name="Content" id="textArea"  rows="10" placeholder="Enter content of your post"></textarea>  
+        <button class = sign-up-button>Create</button>    
+	</form> 
+      </p>
+    </div>
+  </div>
+<script src = "js\index.js"></script>
+</body>
+
+</html>
